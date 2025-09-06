@@ -1,10 +1,10 @@
  
- export default function SortSelect({value,onChange}){
+ export default function SortSelect({sort,setSort}){
 
     return (
-        <select value={value} onChange={e=>onChange(e.target.value)}>
-            <option value="title-asc">Title</option>
-            <option value="create-Desc">Newest</option>
+        <select value={sort} onChange={e=>setSort(e.target.value)}>
+            <option value="asc">Sort</option>
+            <option value="desc">Sort</option>
             <option value="create-asc">Oldest</option>
 
         </select>

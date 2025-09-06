@@ -1,26 +1,24 @@
 
 import NavBar from './components/NavBar'
 import SearchBar from './components/SearchBar'
+import SortSelect from './components/SortSelect'
 
 
 import './App.css'
-// import { useAuth } from './context/AuthContext'
+// import { useState } from 'react'
 
-// function Gate(){
-//   const {ready,user}=useAuth();
-
-//   if(!ready){
-//     return <div></div>
-//   }
-// }
 
 function App() {
+  // const [search,setSearch]=useState("");
+  
     
 
   return (
     <>
      <NavBar/> 
      <SearchBar/>
+
+
     </>
   )
 }
